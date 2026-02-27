@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contact | Mhenga Media</title>
+    <meta
+      name="description"
+      content="Contact Mhenga Media for photoshoots, graphic design and media coverage. Send an inquiry or reach us directly on WhatsApp."
+    />
+    <meta name="theme-color" content="#070A12" />
+
+    <meta property="og:title" content="Contact | Mhenga Media" />
+    <meta
+      property="og:description"
+      content="Book a session, request a design or plan your next event with Mhenga Media."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href="index.html" aria-label="Mhenga Media home">
+            <img
+              class="brand-logo"
+              src="Assets/IMG-20260124-WA0286(5).jpg.jpeg"
+              alt="Mhenga Media logo"
+            />
+            <span>
+              <div class="brand-name">Mhenga Media</div>
+              <div class="brand-sub">Leading media provider • CUK</div>
+            </span>
+          </a>
+
+          <button class="nav-toggle" id="js-nav-toggle" type="button" aria-expanded="false" aria-controls="js-nav-links">
+            Menu
+          </button>
+
+          <div class="nav-links" id="js-nav-links" data-open="false">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="media.html">Podcast/Media</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+          </div>
+
+          <div class="nav-cta">
+            <a class="btn btn--ghost" href="media.html">Watch latest</a>
+            <a class="btn btn--primary" href="contact.html">Book a session</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <div class="reveal">
+            <span class="pill"><span class="pill-dot" aria-hidden="true"></span> Contact</span>
+            <h1>Let’s plan your next shoot, design or event.</h1>
+            <p>
+              Share a few details about what you have in mind—dates, location, type of work—and we’ll get back to you
+              with options that fit your timeline and budget.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div class="container grid" style="grid-template-columns: 1.1fr .9fr; gap:18px">
+          <section aria-labelledby="contact-form-heading" class="reveal">
+            <h2 id="contact-form-heading" style="font-family:var(--fontDisplay); margin-top:0; letter-spacing:-.25px">
+              Send an inquiry
+            </h2>
+            <form
+              class="form"
+              name="mhenga-contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="mhenga-contact" />
+              <p style="display:none">
+                <label>
+                  Don’t fill this out if you’re human:
+                  <input name="bot-field" />
+                </label>
+              </p>
+
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div class="field field--full">
+                <label for="service">What are you interested in?</label>
+                <input
+                  id="service"
+                  name="service"
+                  type="text"
+                  placeholder="e.g. Photoshoot, design, media coverage or a mix"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="date">Preferred date</label>
+                <input id="date" name="date" type="date" />
+                <p class="helper">If you’re not sure yet, you can leave this blank.</p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone (optional)</label>
+                <input id="phone" name="phone" type="tel" placeholder="+254 ..." />
+              </div>
+
+              <div class="field field--full">
+                <label for="message">Project details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your event, shoot or design. Include location, times and any references if you have them."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="field field--full">
+                <button class="btn btn--primary" type="submit">Send message</button>
+              </div>
+            </form>
+          </section>
+
+          <aside class="reveal" aria-label="Direct contact options">
+            <h2 style="font-family:var(--fontDisplay); margin-top:0; letter-spacing:-.25px">Reach out directly</h2>
+            <p style="margin:0 0 10px; color:rgba(234,240,255,.82)">
+              If it’s easier, you can message Mhenga Media on WhatsApp or email with your idea and we’ll respond as
+              soon as we’re off set.
+            </p>
+
+            <div style="display:grid; gap:10px; margin-top:10px">
+              <a
+                class="btn btn--primary"
+                href="https://wa.me/254712830837"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+              <a class="btn" href="mailto:hello@example.com">Email us</a>
+              <div class="note">
+                <strong style="font-family:var(--fontDisplay)">WhatsApp number</strong>
+                <div style="margin-top:6px">+254&nbsp;712&nbsp;830&nbsp;837</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div style="max-width: 52ch">
+          <div class="brand-name" style="font-family:var(--fontDisplay); font-weight:900">Mhenga Media</div>
+          <div style="margin-top:6px">
+            Photoshoots • Graphic design • Media coverage — recognized as the leading media provider at The Co-operative University of Kenya.
+          </div>
+        </div>
+        <div>
+          <div style="font-weight:800; margin-bottom:8px">Quick links</div>
+          <div style="display:grid; gap:8px">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="media.html">Podcast/Media</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-weight:800; margin-bottom:8px">Contact</div>
+          <div style="display:grid; gap:8px">
+            <a href="contact.html">Send an inquiry</a>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="tel:+254712830837">+254 712 830 837</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top:18px; opacity:.85">
+        © <span id="js-year"></span> Mhenga Media. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+

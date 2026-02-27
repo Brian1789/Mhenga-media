@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Podcast & Media | Mhenga Media</title>
+    <meta
+      name="description"
+      content="Watch the latest MhengaGee Media videos and podcasts. This page auto-updates with the newest upload from the MhengaGee YouTube channel."
+    />
+    <meta name="theme-color" content="#070A12" />
+
+    <meta property="og:title" content="Podcast & Media | Mhenga Media" />
+    <meta
+      property="og:description"
+      content="Auto-updated feed of the latest videos from the MhengaGee Media YouTube channel."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href="index.html" aria-label="Mhenga Media home">
+            <img
+              class="brand-logo"
+              src="Assets/IMG-20260124-WA0286(5).jpg.jpeg"
+              alt="Mhenga Media logo"
+            />
+            <span>
+              <div class="brand-name">Mhenga Media</div>
+              <div class="brand-sub">Leading media provider • CUK</div>
+            </span>
+          </a>
+
+          <button class="nav-toggle" id="js-nav-toggle" type="button" aria-expanded="false" aria-controls="js-nav-links">
+            Menu
+          </button>
+
+          <div class="nav-links" id="js-nav-links" data-open="false">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="media.html" aria-current="page">Podcast/Media</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="nav-cta">
+            <a class="btn btn--ghost" href="portfolio.html">View work</a>
+            <a class="btn btn--primary" href="contact.html">Book a session</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="container">
+          <div class="reveal">
+            <span class="pill"><span class="pill-dot" aria-hidden="true"></span> Podcast & Media</span>
+            <h1>Latest from the MhengaGee Media YouTube channel.</h1>
+            <p>
+              This page automatically pulls in the most recent upload from the
+              <a href="https://www.youtube.com/@mhengagee" target="_blank" rel="noreferrer">MhengaGee Media YouTube channel</a>,
+              plus an archive of recent videos with thumbnails and titles.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section section--tight">
+        <div
+          class="container grid"
+          id="js-media-root"
+          data-youtube-channel="CHANNEL_ID"
+        >
+          <div class="reveal">
+            <div class="video-shell">
+              <iframe
+                id="js-latest-iframe"
+                class="video"
+                src=""
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                title="Latest video from MhengaGee Media"
+              ></iframe>
+              <div class="video-meta">
+                <h2 id="js-latest-title">Latest upload</h2>
+                <p id="js-latest-meta">Loading the most recent video…</p>
+              </div>
+            </div>
+            <p id="js-media-status" class="helper" aria-live="polite" style="margin-top:10px"></p>
+          </div>
+
+          <aside class="reveal">
+            <h2 style="font-family:var(--fontDisplay); letter-spacing:-.25px; margin-top:0">Recent videos archive</h2>
+            <p style="margin:0 0 10px; color:rgba(234,240,255,.80)">
+              Scroll through recent uploads from MhengaGee Media. Tap a thumbnail to open the video directly on YouTube.
+            </p>
+            <div id="js-archive" class="archive" aria-label="Recent MhengaGee Media videos"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div style="max-width: 52ch">
+          <div class="brand-name" style="font-family:var(--fontDisplay); font-weight:900">Mhenga Media</div>
+          <div style="margin-top:6px">
+            Photoshoots • Graphic design • Media coverage — recognized as the leading media provider at The Co-operative University of Kenya.
+          </div>
+        </div>
+        <div>
+          <div style="font-weight:800; margin-bottom:8px">Quick links</div>
+          <div style="display:grid; gap:8px">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-weight:800; margin-bottom:8px">Contact</div>
+          <div style="display:grid; gap:8px">
+            <a href="contact.html">Send an inquiry</a>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="tel:+254712830837">+254 712 830 837</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top:18px; opacity:.85">
+        © <span id="js-year"></span> Mhenga Media. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script src="media.js" defer></script>
+  </body>
+</html>
+
