@@ -1,254 +1,437 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Portfolio | Mhenga Media</title>
-    <meta
-      name="description"
-      content="Browse Mhenga Media’s portfolio of photoshoots, graphic design and media coverage projects at The Co-operative University of Kenya and beyond."
-    />
-    <meta name="theme-color" content="#070A12" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="Portfolio | Mhenga Media" />
-    <meta
-      property="og:description"
-      content="Selected photoshoots, design work and event media coverage from Mhenga Media."
-    />
-    <meta property="og:type" content="website" />
+  <title>Portfolio | Mhenga Media</title>
+  <meta name="description"
+    content="Browse Mhenga Media’s portfolio of photoshoots, graphic design and media coverage projects at The Co-operative University of Kenya and beyond." />
+  <meta name="theme-color" content="#070A12" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <meta property="og:title" content="Portfolio | Mhenga Media" />
+  <meta property="og:description"
+    content="Selected photoshoots, design work and event media coverage from Mhenga Media." />
+  <meta property="og:type" content="website" />
 
-    <header class="site-header">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Mhenga Media home">
+          <img class="brand-logo" src="Assets/IMG-20260124-WA0286(5).jpg.jpeg" alt="Mhenga Media logo" />
+          <span>
+            <div class="brand-name">Mhenga Media</div>
+            <div class="brand-sub">Leading media provider • CUK</div>
+          </span>
+        </a>
+
+        <button class="nav-toggle" id="js-nav-toggle" type="button" aria-expanded="false" aria-controls="js-nav-links">
+          Menu
+        </button>
+
+        <div class="nav-links" id="js-nav-links" data-open="false">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html" aria-current="page">Portfolio</a>
+          <a href="media.html">Podcast/Media</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="btn btn--ghost" href="https://www.youtube.com/@mhengagee" target="_blank"
+            rel="noreferrer">YouTube</a>
+          <a class="btn" href="media.html">Watch latest</a>
+          <a class="btn btn--primary" href="contact.html">Book a session</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
       <div class="container">
-        <nav class="nav" aria-label="Primary">
-          <a class="brand" href="index.html" aria-label="Mhenga Media home">
-            <img
-              class="brand-logo"
-              src="Assets/IMG-20260124-WA0286(5).jpg.jpeg"
-              alt="Mhenga Media logo"
-            />
-            <span>
-              <div class="brand-name">Mhenga Media</div>
-              <div class="brand-sub">Leading media provider • CUK</div>
-            </span>
-          </a>
-
-          <button class="nav-toggle" id="js-nav-toggle" type="button" aria-expanded="false" aria-controls="js-nav-links">
-            Menu
-          </button>
-
-          <div class="nav-links" id="js-nav-links" data-open="false">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html" aria-current="page">Portfolio</a>
-            <a href="media.html">Podcast/Media</a>
-            <a href="contact.html">Contact</a>
-          </div>
-
-          <div class="nav-cta">
-            <a class="btn btn--ghost" href="https://www.youtube.com/@mhengagee" target="_blank" rel="noreferrer">YouTube</a>
-            <a class="btn" href="media.html">Watch latest</a>
-            <a class="btn btn--primary" href="contact.html">Book a session</a>
-          </div>
-        </nav>
+        <div class="reveal">
+          <span class="pill"><span class="pill-dot" aria-hidden="true"></span> Portfolio</span>
+          <h1>Highlights from photoshoots, designs and coverage.</h1>
+          <p>
+            A selection of projects that show how Mhenga Media captures real moments, builds strong visuals and
+            documents events for The Co-operative University of Kenya community and clients beyond campus.
+          </p>
+        </div>
       </div>
     </header>
 
-    <main id="main">
-      <header class="page-hero">
-        <div class="container">
-          <div class="reveal">
-            <span class="pill"><span class="pill-dot" aria-hidden="true"></span> Portfolio</span>
-            <h1>Highlights from photoshoots, designs and coverage.</h1>
-            <p>
-              A selection of projects that show how Mhenga Media captures real moments, builds strong visuals and
-              documents events for The Co-operative University of Kenya community and clients beyond campus.
-            </p>
-          </div>
+    <!-- ── Photoshoots ── -->
+    <section class="section section--tight" id="photoshoot">
+      <div class="container">
+        <div class="reveal">
+          <h2 style="font-family:var(--fontDisplay); margin:0 0 6px; letter-spacing:-.3px">Photoshoots</h2>
+          <p style="margin:0 0 14px; color:rgba(234,240,255,.80)">Portraits, events and campus moments.</p>
         </div>
-      </header>
-
-      <section class="section section--tight">
-        <div class="container">
-          <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; gap:12px; flex-wrap:wrap">
-            <div>
-              <h2 style="font-family:var(--fontDisplay); margin:0 0 6px; letter-spacing:-.3px">Filter by type of work</h2>
-              <p style="margin:0; color:rgba(234,240,255,.80)">Browse by photoshoots, graphic design or media coverage.</p>
+        <div class="portfolio" aria-label="Photoshoot gallery">
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_0069.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Ridge shoot • Outdoor portraits</h3><span>Photoshoot</span>
+              </div>
             </div>
-          </div>
-
-          <div class="filters reveal" role="toolbar" aria-label="Filter portfolio">
-            <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="chip" type="button" data-filter="photoshoot" aria-pressed="false">Photoshoots</button>
-            <button class="chip" type="button" data-filter="design" aria-pressed="false">Graphic design</button>
-            <button class="chip" type="button" data-filter="coverage" aria-pressed="false">Media coverage</button>
-          </div>
-
-          <div class="portfolio" aria-label="Portfolio grid">
-            <!-- Photoshoots -->
-            <article class="tile reveal" data-category="photoshoot" id="photoshoot">
-              <div class="tile-bg" style="background-image:url('Assets/IMG_0069.jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Ridge shoot • Outdoor portraits</h3>
-                  <span>Photoshoot</span>
-                </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20260204-WA0199.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Studio‑style portraits</h3><span>Photoshoot</span>
               </div>
-            </article>
-
-            <article class="tile reveal" data-category="photoshoot">
-              <div class="tile-bg" style="background-image:url('Assets/IMG-20260204-WA0199.jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Studio‑style portraits</h3>
-                  <span>Photoshoot</span>
-                </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20260223-WA0028.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Campus life moments</h3><span>Photoshoot</span>
               </div>
-            </article>
-
-            <article class="tile reveal" data-category="photoshoot">
-              <div class="tile-bg" style="background-image:url('Assets/IMG-20260223-WA0028.jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Campus life moments</h3>
-                  <span>Photoshoot</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Graphic design -->
-            <article class="tile reveal" data-category="design" id="design">
-              <div class="tile-bg" style="background-image:url('Assets/WhatsApp Image 2026-02-27 at 13.31.50.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Event key visual</h3>
-                  <span>Graphic design</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="tile reveal" data-category="design">
-              <div class="tile-bg" style="background-image:url('Assets/IMG-20251214-WA0046(3).jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Bold poster layout</h3>
-                  <span>Graphic design</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="tile reveal" data-category="design">
-              <div class="tile-bg" style="background-image:url('Assets/IMG-20250420-WA0116(1).jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Social media set</h3>
-                  <span>Graphic design</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Coverage -->
-            <article class="tile reveal" data-category="coverage" id="coverage">
-              <div class="tile-bg" style="background-image:url('Assets/IMG-20260126-WA0047(1).jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Live campus event</h3>
-                  <span>Media coverage</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="tile reveal" data-category="coverage">
-              <div class="tile-bg" style="background-image:url('Assets/1771498802833.jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Concert highlights</h3>
-                  <span>Media coverage</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="tile reveal" data-category="coverage">
-              <div class="tile-bg" style="background-image:url('Assets/1771498772825.jpg.jpeg')"></div>
-              <div class="tile-shade" aria-hidden="true"></div>
-              <div class="tile-meta">
-                <div>
-                  <h3>Ceremony storytelling</h3>
-                  <span>Media coverage</span>
-                </div>
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
+          <!-- add more photoshoot images here -->
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="note reveal">
-            <strong style="font-family:var(--fontDisplay)">Looking for something specific?</strong>
-            <div style="margin-top:6px">
-              If you have a particular style, event type or design in mind that you don’t see here, reach out with
-              references or ideas and we’ll share a focused selection.
-            </div>
-            <div style="margin-top:10px">
-              <a class="btn btn--primary" href="contact.html">Ask about a project</a>
-            </div>
-          </div>
+    <!-- ── Graphic Design ── -->
+    <section class="section section--tight" id="design">
+      <div class="container">
+        <div class="reveal">
+          <h2 style="font-family:var(--fontDisplay); margin:0 0 6px; letter-spacing:-.3px">Graphic design</h2>
+          <p style="margin:0 0 14px; color:rgba(234,240,255,.80)">Posters, social media kits and brand visuals.</p>
         </div>
-      </section>
-    </main>
+        <div class="portfolio" aria-label="Graphic design gallery">
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/Blue Political Election Flyer.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Event key visual</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/CUKSU INCOMING PRESIDENT.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Bold poster layout</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/AH.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Social media set</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/WhatsApp Image 2026-02-27 at 13.31.50.jpeg')">
+            </div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Campaign poster concept</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20251214-WA0046(3).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Promotional event poster</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20250420-WA0116(1).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Announcement artwork</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20260223-WA0036.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Poster variation set</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20260221-WA0039(1).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Campus event moment</h3><span>Graphic design</span>
+              </div>
+            </div>
+          </article>
+          <!-- add more design images here -->
+        </div>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <div class="container footer-row">
-        <div style="max-width: 52ch">
-          <div class="brand-name" style="font-family:var(--fontDisplay); font-weight:900">Mhenga Media</div>
+    <!-- ── Media Coverage ── -->
+    <section class="section section--tight" id="coverage">
+      <div class="container">
+        <div class="reveal">
+          <h2 style="font-family:var(--fontDisplay); margin:0 0 6px; letter-spacing:-.3px">Media coverage</h2>
+          <p style="margin:0 0 14px; color:rgba(234,240,255,.80)">Live events, concerts and ceremony highlights.</p>
+        </div>
+        <div class="portfolio" aria-label="Media coverage gallery">
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20260126-WA0047(1).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Live campus event</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/1771498802833.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Concert highlights</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/1771498772825.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Ceremony storytelling</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG-20260224-WA0081.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Event atmosphere</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_0013%20(1).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Live event capture</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_0050.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Event crowd scene</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_0059.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Stage performance</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_0182.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>On-site coverage</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_0198.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Event documentation</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2780.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Ceremony moments</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2783.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Venue highlights</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2796.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Guest interactions</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2801.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Event keynote</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2802.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Panel session</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2809%20(1).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Behind the scenes</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2832.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Award moment</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2833.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Celebration highlights</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_2869%20(1).jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Event wrap-up</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <div class="tile-bg" style="background-image:url('Assets/IMG_9974.jpg.jpeg')"></div>
+            <div class="tile-shade" aria-hidden="true"></div>
+            <div class="tile-meta">
+              <div>
+                <h3>Campus gathering</h3><span>Media coverage</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="note reveal">
+          <strong style="font-family:var(--fontDisplay)">Looking for something specific?</strong>
           <div style="margin-top:6px">
-            Photoshoots • Graphic design • Media coverage — recognized as the leading media provider at The Co-operative University of Kenya.
+            If you have a particular style, event type or design in mind that you don’t see here, reach out with
+            references or ideas and we’ll share a focused selection.
           </div>
-        </div>
-        <div>
-          <div style="font-weight:800; margin-bottom:8px">Quick links</div>
-          <div style="display:grid; gap:8px">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="media.html">Podcast/Media</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
-        <div>
-          <div style="font-weight:800; margin-bottom:8px">Contact</div>
-          <div style="display:grid; gap:8px">
-            <a href="contact.html">Send an inquiry</a>
-            <a href="mailto:glennaspin9@gmail.com">glennaspin9@gmail.com</a>
-            <a href="tel:+254712830837">+254 712 830 837</a>
+          <div style="margin-top:10px">
+            <a class="btn btn--primary" href="contact.html">Ask about a project</a>
           </div>
         </div>
       </div>
-      <div class="container" style="margin-top:18px; opacity:.85">
-        © <span id="js-year"></span> Mhenga Media. All rights reserved.
-      </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="main.js" defer></script>
-  </body>
+  <footer class="footer">
+    <div class="container footer-row">
+      <div style="max-width: 52ch">
+        <div class="brand-name" style="font-family:var(--fontDisplay); font-weight:900">Mhenga Media</div>
+        <div style="margin-top:6px">
+          Photoshoots • Graphic design • Media coverage — recognized as the leading media provider at The Co-operative
+          University of Kenya.
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:800; margin-bottom:8px">Quick links</div>
+        <div style="display:grid; gap:8px">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="media.html">Podcast/Media</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:800; margin-bottom:8px">Contact</div>
+        <div style="display:grid; gap:8px">
+          <a href="contact.html">Send an inquiry</a>
+          <a href="mailto:glennaspin9@gmail.com">glennaspin9@gmail.com</a>
+          <a href="tel:+254712830837">+254 712 830 837</a>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:18px; opacity:.85">
+      © <span id="js-year"></span> Mhenga Media. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+
 </html>
-
