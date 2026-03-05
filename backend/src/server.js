@@ -14,6 +14,9 @@ const messageRoutes = require("./routes/messages");
 
 const app = express();
 
+// Trust proxy (Render uses a reverse proxy)
+app.set("trust proxy", 1);
+
 // ── Security headers ──
 app.use(
     helmet({
@@ -34,8 +37,12 @@ app.use(
 // ── Rate limiting (login) ──
 const loginLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 min
-    max: 50,
+    max: 200,
     message: { message: "Too many login attempts, try again in 15 minutes" },
+    standardHeaders: true,
+    legacyHeaders: false,
+    // Use the real client IP behind a proxy (Render)
+    keyGenerator: (req) => req.headers["x-forwarded-for"] || req.ip,
 });
 app.use("/api/auth/login", loginLimiter);
 
