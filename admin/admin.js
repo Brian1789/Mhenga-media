@@ -4,7 +4,7 @@
   /* ============================
      CONFIG
      ============================ */
-  const RENDER_URL = "RENDER_BACKEND_URL"; // ← will be updated once Render is live
+  const RENDER_URL = "https://mhenga-media.onrender.com";
   const API = window.location.hostname === "localhost"
     ? "/api"
     : RENDER_URL + "/api";
