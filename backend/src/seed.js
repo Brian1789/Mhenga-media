@@ -30,7 +30,10 @@ async function seed() {
 
     const existing = await AdminUser.findOne({ email: ADMIN_EMAIL.toLowerCase() });
     if (existing) {
-        console.log(`Admin "${ADMIN_EMAIL}" already exists — skipping.`);
+        console.log(`Admin "${ADMIN_EMAIL}" already exists — updating password.`);
+        existing.password = ADMIN_PASSWORD;
+        await existing.save();
+        console.log("Password updated.");
     } else {
         await AdminUser.create({ email: ADMIN_EMAIL, password: ADMIN_PASSWORD });
         console.log(`Admin user created: ${ADMIN_EMAIL}`);

@@ -51,13 +51,14 @@
 
     const res = await fetch(`${API}${path}`, { ...opts, headers: { ...headers, ...opts.headers } });
 
-    if (res.status === 401) {
+    const data = await res.json().catch(() => ({}));
+
+    if (res.status === 401 && path !== "/auth/login") {
       clearToken();
       showLogin();
       throw new Error("Session expired");
     }
 
-    const data = await res.json();
     if (!res.ok) throw new Error(data.message || "Request failed");
     return data;
   }
@@ -123,8 +124,6 @@
     const email = $("#login-user").value.trim();
     const password = $("#login-pass").value;
 
-    console.log("[LOGIN] email:", email, "password length:", password.length, "first char:", password[0]);
-
     if (!email || !password) {
       loginError.textContent = "Please fill in both fields.";
       return;
@@ -138,7 +137,6 @@
       showAdmin();
       toast("Welcome back!");
     } catch (err) {
-      console.error("[LOGIN] failed:", err);
       loginError.textContent = err.message || "Invalid credentials.";
     }
   });
