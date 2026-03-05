@@ -34,7 +34,7 @@ app.use(
 // ── Rate limiting (login) ──
 const loginLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 min
-    max: 10,
+    max: 50,
     message: { message: "Too many login attempts, try again in 15 minutes" },
 });
 app.use("/api/auth/login", loginLimiter);
