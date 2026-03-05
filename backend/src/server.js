@@ -18,16 +18,7 @@ const app = express();
 app.use(
     helmet({
         crossOriginResourcePolicy: { policy: "cross-origin" },
-        contentSecurityPolicy: {
-            directives: {
-                defaultSrc: ["'self'"],
-                scriptSrc: ["'self'"],
-                styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-                fontSrc: ["'self'", "https://fonts.gstatic.com"],
-                imgSrc: ["'self'", "data:", "blob:"],
-                connectSrc: ["'self'"],
-            },
-        },
+        contentSecurityPolicy: false,
     })
 );
 
@@ -55,13 +46,6 @@ app.use(express.urlencoded({ extended: false }));
 // ── Static uploads ──
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// ── Serve the main website (from project root) ──
-const siteRoot = path.join(__dirname, "..", "..");
-app.use(express.static(siteRoot));
-
-// ── Serve admin panel at /admin ──
-app.use("/admin", express.static(path.join(siteRoot, "admin")));
-
 // ── Routes ──
 app.use("/api/auth", authRoutes);
 app.use("/api/content", contentRoutes);
@@ -71,13 +55,8 @@ app.use("/api/messages", messageRoutes);
 // ── Health check ──
 app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
 
-// ── SPA fallback for admin (return admin.html for /admin routes) ──
-app.get("/admin/*", (_req, res) => {
-    res.sendFile(path.join(siteRoot, "admin", "admin.html"));
-});
-
-// ── 404 for API routes ──
-app.use("/api/*", (_req, res) => res.status(404).json({ message: "Route not found" }));
+// ── 404 ──
+app.use((_req, res) => res.status(404).json({ message: "Route not found" }));
 
 // ── Global error handler ──
 app.use((err, _req, res, _next) => {
