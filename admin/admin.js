@@ -119,8 +119,11 @@
      ============================ */
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+    loginError.textContent = "";
     const email = $("#login-user").value.trim();
     const password = $("#login-pass").value;
+
+    console.log("[LOGIN] email:", email, "password length:", password.length, "first char:", password[0]);
 
     if (!email || !password) {
       loginError.textContent = "Please fill in both fields.";
@@ -128,12 +131,14 @@
     }
 
     try {
+      loginError.textContent = "Signing in…";
       const data = await api("/auth/login", { method: "POST", body: { email, password } });
       setToken(data.token);
       loginError.textContent = "";
       showAdmin();
       toast("Welcome back!");
     } catch (err) {
+      console.error("[LOGIN] failed:", err);
       loginError.textContent = err.message || "Invalid credentials.";
     }
   });
