@@ -165,8 +165,6 @@ button, input, textarea, select { font: inherit; }
    ADMIN SHELL LAYOUT
    ============================ */
 .admin-shell {
-  display: grid;
-  grid-template-columns: var(--sidebarW) 1fr;
   min-height: 100vh;
 }
 
